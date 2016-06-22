@@ -48,7 +48,7 @@ $(function(){
      * @constructor
      */
     function LoadSourceData(){
-        $.getJSON('data/cities.json', function(resp){
+       $.getJSON('data/cities-dic.json', function(resp){
             for (var item in resp){
                 if (resp[item]) {
                     var currentItem = {};
