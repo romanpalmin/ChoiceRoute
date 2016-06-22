@@ -1,0 +1,50 @@
+[
+  {
+    "CityId":1,
+    "RegionId":153,
+    "CountryId":1,
+    "FullName":"Санкт-Петербург, Санкт-Петербург (регион), Россия",
+    "ShortName":"Санкт-Петербург",
+    "IsRegionalCenter":true,
+    "CityName":"Санкт-Петербург",
+    "RegionName":"Санкт-Петербург (регион)",
+    "CountryName":"Россия",
+    "CountryCodeName":"RUS"
+  },
+  {
+    "CityId":2,
+    "RegionId":1,
+    "CountryId":1,
+    "FullName":"Москва (МКАД 94 км), Московская область, Россия",
+    "ShortName":"Москва (МКАД 94 км), Московская область",
+    "IsRegionalCenter":false,
+    "CityName":"Москва (МКАД 94 км)",
+    "RegionName":"Московская область",
+    "CountryName":"Россия",
+    "CountryCodeName":"RUS"
+  },
+  {
+    "CityId":3,
+    "RegionId":40,
+    "CountryId":1,
+    "FullName":"Апшеронск, Краснодарский край, Россия",
+    "ShortName":"Апшеронск, Краснодарский край",
+    "IsRegionalCenter":false,
+    "CityName":"Апшеронск",
+    "RegionName":"Краснодарский край",
+    "CountryName":"Россия",
+    "CountryCodeName":"RUS"
+  },
+  {
+    "CityId":4,
+    "RegionId":null,
+    "CountryId":32,
+    "FullName":"Есеница, Словения",
+    "ShortName":"Есеница, SLO",
+    "IsRegionalCenter":false,
+    "CityName":"Есеница",
+    "RegionName":null,
+    "CountryName":"Словения",
+    "CountryCodeName":"SLO"
+  }
+]

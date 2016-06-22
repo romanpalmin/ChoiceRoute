@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestTask</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/select2/dist/js/select2.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="../node_modules/select2/dist/css/select2.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main-form-wrapper">
+        <div class="main-form">
+            <div class="form-toggle-view">
+                <table class="main-form-table main-form-table-search">
+                    <tr>
+                        <td class="table-left-cell"><span class="result-label">Укажите маршрут</span></td>
+                        <td class="table-middle-cell"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><select class="main-form-dest-from"><option></option></select></td>
+                        <td><button class="btn-arrows"></button></td>
+                        <td><select class="main-form-dest-to"><option></option></select></td>
+                    </tr>
+                    <tr>
+                        <td><button class="submit"><span class="button-label">ГОТОВО</span></button></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table class="main-form-table main-form-table-result">
+                    <tr>
+                        <td class="table-left-cell"><span class="result-label">Ваш маршрут</span></td>
+                        <td></td>
+                    </tr>
+                    <tr class="result-row">
+                        <td>
+                            <div class="pod-cell-wrapper">
+                                <span class="point-from point-main point-from-main ">Название города</span><br>
+                                <span class="point-from point-add point-from-add">Регион</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="pod-cell-wrapper">
+                                <span class="point-to point-main point-to-main">Название города</span><br>
+                                <span class="point-to point-add point-to-add">Регион</span>
+                            </div>
+                            <img class="arrow" src="images/arrow-from-to.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button class="change"><span class="button-label">ИЗМЕНИТЬ</span></button>
+                            <span class="link-change-dest">Сбросить</span></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
