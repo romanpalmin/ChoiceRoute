@@ -62,6 +62,30 @@ $(function(){
             }
             Init();
         });
+
+        /*
+        // Версия для сервера
+        $.ajax({
+            url: "http://dev.romanpalmin.com/samples/ChoiceRoute/data/cities.json",
+            type: "POST",
+            crossDomain: true,
+            dataType: "json"
+        }).done(function(resp) {
+            for (var item in resp){
+                if (resp[item]) {
+                    var currentItem = {};
+                    currentItem.id = resp[item].CityId;
+                    currentItem.cityName = resp[item].CityName;
+                    currentItem.regionName = resp[item].RegionName;
+                    currentItem.countryName = resp[item].CountryName;
+                    AddOptions(currentItem);
+                    data.push(currentItem);
+                }
+            }
+            Init();
+        }).fail(function(err){
+            console.log(err);
+        });*/
     }
 
     /**
@@ -184,12 +208,13 @@ $(function(){
         to = GetTitlesById(toId);
         selectedDestFromCity = from.cityName;
         selectedDestToCity = to.cityName;
-        if (from.regionName){
-            selectedDestFromInfo =  from.regionName + ', ';
-        }
+        selectedDestFromInfo =  from.regionName ? from.regionName + ', ' : '';
         selectedDestToInfo = to.regionName ? to.regionName + ', ' : '';
         selectedDestFromInfo += from.countryName;
         selectedDestToInfo += to.countryName;
+        console.log(selectedFromInfo.text());
+        selectedFromInfo.empty();
+        console.log(selectedFromInfo.text());
         if (selectedDestFromCity !== '' && selectedDestToCity !== '') {
             selectedFromCity.empty().text(selectedDestFromCity);
             selectedToCity.empty().text(selectedDestToCity);
@@ -198,6 +223,7 @@ $(function(){
             toggleVisibleTable.toggle();
             StoreData(fromId, toId);
         }
+        console.log(selectedFromInfo.text());
     }
 
 
